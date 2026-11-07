@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Ukrycie reklama interia pogoda",
+  "version": "1.0",
+  "description": "Ukrycie reklama mala wyskakujaca z prognoza.",
+  "content_scripts": [
+    {
+      "matches": ["*://pogoda.interia.pl/prognoza-szczegolowa*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
